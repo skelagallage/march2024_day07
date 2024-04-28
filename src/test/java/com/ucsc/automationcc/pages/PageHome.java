@@ -3,12 +3,14 @@ package com.ucsc.automationcc.pages;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 public class PageHome extends PageBase{
 
     @AndroidFindBy(accessibility = "Login")
+    @iOSXCUITFindBy(accessibility = "Login")
     public WebElement loginSign;
 
     public PageHome(AppiumDriver driver) {
